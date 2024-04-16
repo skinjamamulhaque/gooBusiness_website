@@ -1,0 +1,417 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+  --blue: #706FE5;
+  --font-red: #ED5765;
+  --btn-red: #F83A40;
+  --white: #FFFFFF;
+  --black: #171616;
+  --main-bg: #F1F1F1;
+}
+
+*{
+  margin: 0;padding: 0; box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: Poppins;
+  overflow-x: hidden;
+  /* padding: 0px 50px; */
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+#hero-section{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--main-bg);
+  
+}
+
+#hero-section .hero-container{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  padding: 1rem 5rem;
+  
+}
+
+#hero-section .hero-container #left-container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  z-index: 2;
+  
+}
+
+
+#hero-section .hero-container #left-container > h1{
+  font-size: 2.5rem;
+  color: var(--black);
+  position: absolute;
+  top: 6rem;
+  
+}
+#hero-section .hero-container #left-container > h6{
+  font-size: 1.4rem;
+  color: var(--font-red);
+  padding-top: 9.5rem;
+}
+#hero-section .hero-container #left-container > p{
+  font-size: 1rem;
+  color: var(--black);
+  padding-top: 1rem;
+  letter-spacing: 1px;
+  
+}
+#hero-section .hero-container #left-container > div{
+  font-size: 1rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+#hero-section .hero-container #left-container > div > button{
+  background-color: var(--btn-red);
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight:400;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+#hero-section .hero-container #right-container{
+  /* border: 1px solid black; */
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+#right-container #hero-img{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#main-div #feature-container{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue);
+  padding: 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#feature-container #feature-heading{
+ font-size:2rem ;
+ color: var(--white);
+}
+
+#feature-container #feature-text{
+  /* padding-top: 3rem; */
+  color: var(--white);
+}
+
+#feature-container #feature-cards{
+  display: flex;
+  gap: 2rem;
+  /* border: 1px solid black; */
+  width: fit-content;
+  height: 100%;
+  padding-left: 5rem;
+  overflow-x: hidden;
+}
+
+#feature-cards #card{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  /* border: 1px solid black; */
+  padding: 1rem ;
+  background-color: var(--white);
+  border: none;
+  border-radius: 6px;
+  
+}
+
+
+
+#feature-cards #card img{
+  /* border: 1px solid red; */
+  height: 100px;
+  /* width: 100%; */
+  object-fit: fill;
+  object-position: center;
+  filter: drop-shadow(0px 1000px 0);
+  transform: translateY(-1000px);
+}
+
+#feature-cards #card h6{
+  /* border: 1px solid green; */
+  font-size:1.2rem ;
+  
+}
+
+#feature-cards #card p{
+  /* border: 1px solid yellow; */
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  
+}
+
+
+#banner-one{
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+
+#banner-one img{
+  width: 100%;
+}
+
+#main-div #tech-icons{
+  height: 100%;
+  padding: 2rem 6rem ;
+  text-align: center;
+  
+}
+
+#tech-icons > h6{
+  font-size:2rem;
+  color: var(--black);
+}
+
+
+#tech-icons #icons{
+  margin-top: 2rem;
+  /* border: 1px solid ; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#tech-icons #icons img{
+  height: 100px;
+}
+
+
+#main-div #course-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 2rem 5rem 10rem;
+  background-color: var(--blue);
+  text-align: center;
+}
+
+#course-container #course-header{
+  color: var(--white);
+  padding: 0rem 10rem;
+}
+
+#course-header h2{
+  font-size: 2.8rem ;
+}
+#course-header h6{
+  font-size: 1.35rem ;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+#course-header p{
+  font-size: 0.8rem ;
+  margin-top: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+#course-container > #course-cards{
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2.8rem;
+}
+
+#course-cards > #card{
+  /* border: 1px solid white; */
+  width: 300px;
+  max-height: 500px;
+  text-align: center;
+  background-color: var(--white);
+  padding: 1.8rem 1.5rem ;
+  padding-top: 0;
+  border-radius: 5px;
+}
+
+#course-cards #card #course-banner{
+  width: 100%;
+}
+
+#course-banner > img{
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+#course-cards #card h6{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+#course-cards #card p{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+#course-cards #card div{
+  margin-top: 1.9rem;
+}
+
+#course-cards #card div button{
+  border: none;
+  background-color: var(--btn-red);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+#banner-two{
+  height:100%;
+  width: 100%;
+  background-color: var(--main-bg);
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+#banner-two > img{
+  margin: auto;
+  width: 50%;
+}
+#banner-two > h6{
+  margin: auto;
+  margin-top: 1rem;
+  font-size: 1rem;
+  /* border: 1px solid; */
+  padding: 0px 8rem;
+}
+
+#course-feature{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  text-align: center;
+  padding: 3rem 5rem;
+}
+
+#course-feature h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#course-feature #course-card{
+  margin-top: 1rem;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#course-feature #course-card #card{
+  width: 270px;
+  padding: 2rem ;
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  background-color: var(--main-bg);
+  filter: drop-shadow(1px 12px 10px #cdcbcb);
+  
+}
+
+#course-feature #course-card #card img{
+  width: 60px;
+}
+#course-feature #course-card #card h6{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-top: 1rem;
+}
+#course-feature #course-card #card p{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+#main-div #banner-three{
+  background-image: url(/Images/cover3.png);
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-div #banner-four{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+#main-div #banner-four #left-container{
+  width: 50%;
+  height: 100%;
+  padding-left: 5rem;
+  /* border: 1px solid black; */
+  position: relative;
+  
+}
+
+
+#banner-four #left-container h6{
+  font-size: 1rem;
+}
+#banner-four #left-container button{
+  border: none;
+  background-color: var(--btn-red);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+#banner-four #right-container{
+  /* border: 1px solid yellow; */
+  width: 50%;
+  
+}
+
+#banner-four #right-container img{
+  width: 80%;
+}
