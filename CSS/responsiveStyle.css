@@ -67,6 +67,10 @@
     text-align: center;
   }
 
+  .wrapper i{
+    display: none;
+  }
+
   #main-div #tech-icons{
     padding: 2rem 10px ;
   }
@@ -165,7 +169,7 @@
   }
 }
 
-@media  screen and  (max-width: 768px) {
+@media  screen and (min-width:481px) and (max-width: 820px) {
 
   #hero-section .hero-container{
     padding: 2rem;
@@ -198,6 +202,10 @@
     
   }
 
+  .wrapper i{
+    display: none;
+  }
+
   #main-div #tech-icons{
     padding: 2rem 10px ;
   }
@@ -210,6 +218,8 @@
     padding: 1.5rem 10px;
     /* border: 1px solid red; */
   }
+
+
 
   #course-container #course-header{
     color: var(--white);

@@ -120,6 +120,7 @@ html,body{
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
 }
 
 #feature-container #feature-heading{
@@ -136,28 +137,177 @@ html,body{
   display: flex;
   gap: 2rem;
   /* border: 1px solid black; */
-  width: fit-content;
   height: 100%;
+  width: 100%;
   padding-left: 5rem;
-  overflow-x: hidden;
+  position: relative;
 }
 
-#feature-cards #card{
-  height: 300px;
+.wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  position: relative;
+  /* border: 1px solid black; */
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+/* .wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+  
+} */
+.wrapper i:first-child{
+  left: -22px;
+  z-index: 2;
+}
+.wrapper i:last-child{
+  right: 22px;
+  z-index: 2;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+/* .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+} */
+/* .carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+} */
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  /* padding-bottom: 15px; */
+  flex-direction: column;
+  border-radius: 8px;
+  /* height: 300px; */
   width: 300px;
   position: relative;
   /* border: 1px solid black; */
   padding: 1rem ;
   background-color: var(--white);
   border: none;
-  border-radius: 6px;
-  
+  /* border-radius: 6px; */
+}
+.carousel .card .img {
+  /* border: 1px solid red;
+  height: 100px;
+  object-fit: fill;
+  object-position: center;
+  filter: brightness(0) invert(0); */
+}
+.card .img img {
+  /* border: 1px solid red; */
+  height: 100px;
+  object-fit: fill;
+  object-position: center;
+  filter: brightness(0) invert(0);
+}
+.carousel .card h2 {
+  /* border: 1px solid green; */
+  font-size:1.2rem ;
+}
+.carousel .card span {
+  /* border: 1px solid yellow; */
+  padding-top: 1rem;
+  font-size: 0.9rem;
 }
 
+/* #feature-container #action_btn{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: #F83A40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--white);
+} */
+
+/* #feature-container #action_btn #left-arrow{
+position: absolute;
+margin: auto;
+z-index: 3;
+left: 0;
+background-color: var(--black);
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+width: 30px;
+text-align: center;
+
+}
+#feature-container #action_btn #right-arrow{
+  position: absolute;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+  background-color: var(--black);
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+width: 30px;
+transform: translateX(-300"px");
+} */
+
+/* #feature-cards #card{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 1px solid black;
+  padding: 1rem ;
+  background-color: var(--white);
+  border: none;
+  border-radius: 6px;
+  
+} */
 
 
-#feature-cards #card img{
-  /* border: 1px solid red; */
+
+/* #feature-cards #card img{
+  border: 1px solid red;
   height: 100px;
   object-fit: fill;
   object-position: center;
@@ -165,17 +315,17 @@ html,body{
 }
 
 #feature-cards #card h6{
-  /* border: 1px solid green; */
+  border: 1px solid green;
   font-size:1.2rem ;
   
 }
 
 #feature-cards #card p{
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   padding-top: 1rem;
   font-size: 0.9rem;
   
-}
+} */
 
 
 #banner-one{
